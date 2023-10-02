@@ -85,7 +85,6 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
         for planet in planets:
-            planet.draw_orbit()
             planet.update_pos(planets)
             planet.draw(win)
         pygame.display.update()
